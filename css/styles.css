@@ -368,3 +368,111 @@ header {
         max-width: 300px;
     }
 }
+
+
+/* Admission & Enrollment Section */
+.admission {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+/* Section Title */
+.admission h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+/* Admission Process */
+.admission-process {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.admission-process h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.admission-process ol {
+    font-size: 1rem;
+    color: var(--text-color);
+    padding-left: 20px;
+    list-style: decimal;
+}
+
+.admission-process li {
+    margin-bottom: 10px;
+}
+
+/* Register Now Button */
+.register-now {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-register {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-register:hover {
+    background: #1E40AF; /* Darker blue */
+}
+
+/* Snake Game Section */
+.snake-game-section {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.snake-game-section p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Play Snake Game Button */
+.btn-snake {
+    background: white;
+    color: var(--primary-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-snake:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .admission-process {
+        width: 100%;
+        max-width: 350px;
+    }
+}
