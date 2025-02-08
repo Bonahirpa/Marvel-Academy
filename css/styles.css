@@ -254,3 +254,117 @@ header {
         max-width: 90%;
     }
 }
+
+/* Academic Section */
+.academics {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--secondary-color);
+}
+
+/* Section Title */
+.academics h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+/* Curriculum Details */
+.curriculum {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.curriculum h3 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.curriculum p, .curriculum ul {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.curriculum ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Special Programs */
+.special-programs{
+    margin:20px ;
+}
+.special-programs h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.programs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.program-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.program-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Calculator Button */
+.calculator-section {
+    margin-top: 30px;
+}
+
+.btn-calculator {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-calculator:hover {
+    background: #1E40AF; /* Darker blue */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .programs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
