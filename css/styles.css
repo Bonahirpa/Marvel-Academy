@@ -707,4 +707,86 @@ th {
 .info-item a:hover {
   color: var(--accent-color);
 }
+/* Footer Section */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-contact p {
+    font-size: 1.2rem;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* .footer-contact a:hover {
+    color: */
+
+.footer-contact a:hover {
+  color: #1d88d4; /* Accent color on hover */
+}
+
+.footer-bottom {
+  background-color: #34495e;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links, .footer-contact {
+    text-align: center;
+  }
+}
