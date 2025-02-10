@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Page</title>
-    <link rel="stylesheet" href="reg_style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="reg_style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>Register</h2>
-        <form action="register.php" method="POST">
-            <input type="text" name="fname" placeholder="First Name" required>
-            <input type="text" name="lname" placeholder="Last Name" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-            <input type="text" name="grade" placeholder="Grade" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Register</button>
-        </form>
-        <p>Already have an account? <a href="./log_index.html">Login</a></p>
+      <h2>Register</h2>
+      <form action="register.php" method="POST">
+        <input type="text" name="fname" placeholder="First Name" required />
+        <input type="text" name="lname" placeholder="Last Name" required />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone Number"
+          required
+        />
+        <small id="phone-error">Only Numbers are Allowed</small>
+        <input
+          type="text"
+          id="grade"
+          name="grade"
+          placeholder="Grade"
+          required
+        />
+        <small id="grade-error">Only Numbers are Allowed</small>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <small id="email-error">Invalid email format.</small>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="./log_index.html">Login</a></p>
     </div>
-
-</body>
+    <script src="./reg_Script.js"></script>
+  </body>
 </html>
