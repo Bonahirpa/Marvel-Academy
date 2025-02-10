@@ -585,3 +585,14 @@ th {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
+  /* Interactivity purpose */
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
