@@ -27,3 +27,24 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+// Interactivity for  all
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    sections.forEach((section) => {
+      section.classList.add("fade-in"); // Ensure sections start faded
+      observer.observe(section);
+    });
+  });
